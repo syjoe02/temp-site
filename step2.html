@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>설문조사 - 2/2 단계</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 500px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #2196F3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #1976D2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>2단계: 취미 & 개발</h2>
+        <form action="finish.html" method="GET">
+            <p><strong>취미 [복수 선택 가능]:</strong></p>
+            <input type="checkbox" name="hobby" value="운동"> 운동(헬스, 스포츠)<br>
+            <input type="checkbox" name="hobby" value="책"> 책<br>
+            <input type="checkbox" name="hobby" value="게임"> 게임<br>
+            <input type="checkbox" name="hobby" value="기타"> 기타<br>
+            <input type="text" name="hobby_etc" placeholder="그 외 취미를 입력하세요"><br><br>
+
+            <p><strong>사용 가능한 언어 [복수 선택 가능]:</strong></p>
+            <input type="checkbox" name="lang" value="Python"> 파이썬<br>
+            <input type="checkbox" name="lang" value="Java"> 자바<br>
+            <input type="checkbox" name="lang" value="C++"> C++<br>
+            <input type="checkbox" name="lang" value="C++"> Go<br><br>
+
+            <input type="submit" value="설문 종료">
+        </form>
+    </div>
+</body>
+
+</html>
