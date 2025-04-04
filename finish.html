@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>마지막</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            position: relative;
+            background: white;
+            /* 모두 30으로 고정 */
+            padding: 30px;
+            padding-bottom: 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 500px;
+        }
+
+        /* 과제 제출자의 정보 */
+        .footer {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            font-size: 12px;
+            color: #777;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #2196F3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #1976D2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>설문이 종료되었습니다.</h2>
+        <h2>감사합니다!</h2>
+
+        <div class="footer">
+            4주차 과제제출자: 조성열
+        </div>
+    </div>
+</body>
+
+</html>
